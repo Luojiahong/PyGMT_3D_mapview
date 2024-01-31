@@ -1,0 +1,2 @@
+# PyGMT_3D_mapview
+使用PyGMT提取三维切片并绘制三维速度模型
