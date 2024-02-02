@@ -1,4 +1,4 @@
-# PyGMT_3D_mapview
+# PyGMT绘制三维剖面图
 使用PyGMT提取三维切片并绘制三维速度模型
 
 # 软件需求
