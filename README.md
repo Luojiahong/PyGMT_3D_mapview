@@ -20,4 +20,33 @@ https://github.com/ShouchengHan/USTClitho2.0/blob/main/USTClitho2.0.wrst.sea_lev
 <img src="mapview_3d_earthquake.png" alt="drawing" width="400"/>
 
 
-
+## pygmt 配置
+高版本存在问题，建议是使用cubeplot绘制https://www.generic-mapping-tools.org/GMTjl_doc/documentation/utilities/cubeplot/
+```raw
+pygmt.show_versions()
+PyGMT information:
+  version: v0.9.0
+System information:
+  python: 3.8.19 | packaged by conda-forge | (default, Mar 20 2024, 12:38:07) [MSC v.1929 64 bit (AMD64)]
+  executable: D:\miniconda3\envs\mtspec\python.exe
+  machine: Windows-10-10.0.19045-SP0
+Dependency information:
+  numpy: 1.24.4
+  pandas: 1.5.3
+  xarray: 2023.1.0
+  netCDF4: 1.6.4
+  packaging: 23.1
+  contextily: 1.5.0
+  geopandas: 0.13.2
+  ghostscript: 9.54.0
+GMT library information:
+  binary version: 6.4.0
+  cores: 8
+  grid layout: rows
+  image layout: 
+  library path: D:/miniconda3/envs/mtspec/Library/bin/gmt.dll
+  padding: 2
+  plugin dir: D:/miniconda3/envs/mtspec/Library/bin/gmt_plugins
+  share dir: c:/programs/gmt6/share
+  version: 6.4.0
+```
