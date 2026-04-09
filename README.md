@@ -7,7 +7,7 @@ import xarray as xr
 import pygmt
 import numpy as np
 ```
-## mapview_3Di.ipynb
+## mapview_3D.ipynb
 使用的速度模型： 
 https://github.com/ShouchengHan/USTClitho2.0/blob/main/USTClitho2.0.wrst.sea_level.txt
 使用PyGMT提取三维切片并绘制三维速度模型，实现按照经纬度截取剖面，对地形按照一定的形状裁剪。
@@ -19,6 +19,11 @@ https://github.com/ShouchengHan/USTClitho2.0/blob/main/USTClitho2.0.wrst.sea_lev
 
 <img src="mapview_3d_earthquake.png" alt="drawing" width="400"/>
 
+## 存在的问题
+在mapview_3D.ipynb和mapview_3d_earthquake.ipynb中，使用-pz/x/y参数控制剖面的位置，但是存在一些问题。现在参考绘制三维断层的思路，将速度剖面离散为多个矩形，使用plot3d绘制，结果虽然不如grdimage给出的结果漂亮，但在增加网采样率后，也可达到类似的效果。下面是一个实现的例子（pygmt=0.15.0,GMT=6.5.0）：
+
+## mapview_3d_vel.ipynb
+<img src="mapview_3d_vel.png" alt="drawing" width="400"/>
 
 ## pygmt 配置
 高版本存在问题，建议是使用cubeplot绘制https://www.generic-mapping-tools.org/GMTjl_doc/documentation/utilities/cubeplot/
