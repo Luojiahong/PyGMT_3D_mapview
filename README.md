@@ -20,7 +20,7 @@ https://github.com/ShouchengHan/USTClitho2.0/blob/main/USTClitho2.0.wrst.sea_lev
 <img src="mapview_3d_earthquake.png" alt="drawing" width="400"/>
 
 ## 存在的问题
-在mapview_3D.ipynb和mapview_3d_earthquake.ipynb中，使用-pz/x/y参数控制剖面的位置，但是存在一些问题。现在参考绘制三维断层的思路，将速度剖面离散为多个矩形，使用plot3d绘制，结果虽然不如grdimage给出的结果漂亮，但在增加网采样率后，也可达到类似的效果。下面是一个实现的例子（pygmt=0.15.0,GMT=6.5.0）：
+在mapview_3D.ipynb和mapview_3d_earthquake.ipynb中，使用-pz/x/y参数控制剖面的位置，但是存在一些问题。现在参考绘制三维断层的思路(https://docs.gmt-china.org/6.6/examples/ex030/#gmtplot-f055180d40109a1e81392063b0cf74c3)，将速度剖面离散为多个矩形，使用plot3d绘制，结果虽然不如grdimage给出的结果漂亮，但在增加网采样率后，也可达到类似的效果。下面是一个实现的例子（pygmt=0.15.0,GMT=6.5.0）：
 
 ## mapview_3d_vel.ipynb
 <img src="mapview_3d_vel.png" alt="drawing" width="400"/>
